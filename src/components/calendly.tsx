@@ -14,7 +14,11 @@ const Calendly = () => {
       </div>
       <InlineWidget
         url="https://calendly.com/sidneyrpsilva/30min?month=2025-01"
-        styles={{ height: "62.5rem", borderRadius: "0.3125rem" }}
+        styles={{
+          height: "62.5rem",
+          borderRadius: "0.3125rem",
+          marginTop: "2rem",
+        }}
       />
     </div>
   )
