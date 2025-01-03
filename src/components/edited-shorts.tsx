@@ -17,6 +17,8 @@ const EditedShorts = () => {
     className: "rounded-xl",
   }
 
+  const videos = ["Qy0C0_Ip-wo", "edgrM0Y-Cuk", "SJsC0OHejWM", "2mP9Id0NfrA"]
+
   return (
     <div className="text-center">
       <h1 className="pb-4 text-5xl font-bold tracking-tight lg:text-6xl">
@@ -28,10 +30,9 @@ const EditedShorts = () => {
 
       <div className="flex justify-center">
         <div className="pointer-events-none mt-10 grid gap-5 sm:grid-cols-1 lg:grid-cols-2">
-          <YouTube opts={videoOptions} videoId="ul5hF4gPRGI" />
-          <YouTube opts={videoOptions} videoId="Ci1lJ0-Xt20" />
-          <YouTube opts={videoOptions} videoId="pG3qdPerUTk" />
-          <YouTube opts={videoOptions} videoId="k6_QykcUl6k" />
+          {videos.map((video, index) => (
+            <YouTube key={index} videoId={video} opts={videoOptions} />
+          ))}
         </div>
       </div>
     </div>
