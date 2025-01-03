@@ -1,53 +1,10 @@
 import Link from "next/link"
 
 import { Separator } from "@/components/ui/separator"
+import { channels, styled } from "@/data/channels"
 import { Avatar } from "@mui/material"
 
 const Channels = () => {
-  const channels = [
-    {
-      logo: "/alpha.jpeg",
-      name: "Alpha",
-      subs: "200,000",
-      link: "https://www.youtube.com/@AlphaCentralOfficial",
-    },
-    {
-      logo: "/frazer.jpeg",
-      name: "Brookes",
-      subs: "70,000",
-      link: "https://www.youtube.com/@FrazerBrookesChannel",
-    },
-    {
-      logo: "/dan.jpg",
-      name: "Dan Kieft",
-      subs: "14,000",
-      link: "https://www.youtube.com/@Dankieft",
-    },
-    {
-      logo: "/joe.jpeg",
-      name: "Joe Leech",
-      subs: "30,000",
-      link: "https://www.youtube.com/@Joe_Leech",
-    },
-  ]
-
-  const styled = {
-    width: {
-      xs: 50,
-      sm: 100,
-      md: 150,
-      lg: 200,
-      xl: 250,
-    },
-    height: {
-      xs: 50,
-      sm: 100,
-      md: 150,
-      lg: 200,
-      xl: 250,
-    },
-  }
-
   return (
     <div className="text-center">
       <h1 className="pb-4 text-5xl font-bold tracking-tight lg:text-6xl">

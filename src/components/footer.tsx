@@ -1,32 +1,10 @@
 import Link from "next/link"
 
-import EmailIcon from "@mui/icons-material/Email"
-import InstagramIcon from "@mui/icons-material/Instagram"
-import XIcon from "@mui/icons-material/X"
-import YouTubeIcon from "@mui/icons-material/YouTube"
+import { links } from "@/data/socials"
 
 const Footer = () => {
-  const links = [
-    {
-      href: "https://twitter.com/BenVFXs",
-      icon: <XIcon className="h-8 w-8" />,
-    },
-    {
-      href: "https://www.instagram.com/benl3e/",
-      icon: <InstagramIcon className="h-9 w-9" />,
-    },
-    {
-      href: "https://www.youtube.com/@Vfxbenlee",
-      icon: <YouTubeIcon className="h-10 w-10" />,
-    },
-    {
-      href: "mailto:vfxbenlee@gmail.com",
-      icon: <EmailIcon className="h-8 w-8" />,
-    },
-  ]
-
   return (
-    <footer className="pb-8 text-center">
+    <footer className="pb-8 text-center" id="socials">
       <div className="flex items-center justify-center space-x-4">
         {links.map(({ href, icon }, index) => (
           <Link
@@ -38,8 +16,10 @@ const Footer = () => {
           </Link>
         ))}
       </div>
-      <p className="text-sm text-slate-100/50">vfxbenlee@gmail.com</p>
-      <p className="text-sm text-slate-100/50">© Ben. All rights reserved.</p>
+      <p className="text-sm text-slate-100/50">sidneyrpsilva@gmail.com</p>
+      <p className="text-sm text-slate-100/50">
+        © Sidney. All rights reserved.
+      </p>
     </footer>
   )
 }

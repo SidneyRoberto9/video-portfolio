@@ -11,13 +11,13 @@ const Hero = () => {
         <div className="mb-6" data-aos="fade-down">
           <div className="relative inline-flex before:absolute before:inset-0">
             <Link
-              href="https://twitter.com/BenVFXs"
+              href="#socials"
               className="group inline-flex w-full items-center justify-center rounded-full border border-slate-100/40 px-3 py-1 text-sm font-medium text-zinc-300 transition duration-150 ease-in-out hover:text-white"
             >
               <span className="relative inline-flex items-center">
-                My Socials{""}
+                My Socials
                 <span className="text-primary-500 tracking-normal transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
-                  <ArrowRight className="size-4" />
+                  <ArrowRight className="ml-0.5 size-4" />
                 </span>
               </span>
             </Link>
@@ -44,8 +44,8 @@ const Hero = () => {
             data-aos="fade-down"
             data-aos-delay="400"
           >
-            Book a free call {""}
-            <ArrowRight className="text-primary-500 ml-1 size-3 tracking-normal transition-transform duration-150 ease-in-out group-hover:translate-x-0.5" />
+            Book a free call
+            <ArrowRight className="text-primary-500 ml-1.5 size-3 tracking-normal transition-transform duration-150 ease-in-out group-hover:translate-x-0.5" />
           </Link>
         </div>
       </div>
