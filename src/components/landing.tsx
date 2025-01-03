@@ -23,7 +23,7 @@ const Landing = () => {
 
   return (
     <Fragment>
-      <section className="relative mx-auto min-h-screen max-w-5xl space-y-80 px-4 pb-16 pt-32 sm:px-6 md:pb-32 md:pt-52">
+      <section className="relative mx-auto min-h-screen max-w-5xl space-y-80 px-4 pb-16 pt-16 sm:px-6 md:pb-32 md:pt-52">
         <Hero />
         <EditedVideos />
         <EditedShorts />

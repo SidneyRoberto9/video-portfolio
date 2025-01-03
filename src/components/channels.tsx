@@ -14,15 +14,15 @@ const Channels = () => {
         <Separator className="mt-3 h-0.5 w-40 bg-slate-100/20" />
       </div>
 
-      <div className="mx-auto flex items-center justify-center sm:space-x-4 lg:space-x-8">
+      <div className="mx-auto flex flex-col items-center justify-center sm:flex-row sm:space-x-4 lg:space-x-8">
         {channels.map(({ link, logo, name, subs }, index) => (
           <div key={index} className="mt-10 flex">
             <div className="flex flex-col items-center">
               <Link href={link}>
                 <Avatar src={logo} alt={name} sx={styled} />
               </Link>
-              <h1 className="mt-4 text-xl font-semibold">{name}</h1>
-              <p className="mt-2 text-lg">{subs}</p>
+              <h1 className="mt-4 text-2xl font-semibold sm:text-xl">{name}</h1>
+              <p className="mt-2 text-base sm:text-lg">{subs}</p>
             </div>
           </div>
         ))}
