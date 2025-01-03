@@ -5,9 +5,11 @@ import "aos/dist/aos.css"
 import AOS from "aos"
 import { Fragment, useEffect } from "react"
 
+import Calendly from "@/components/calendly"
 import Channels from "@/components/channels"
 import EditedShorts from "@/components/edited-shorts"
 import EditedVideos from "@/components/edited-videos"
+import Footer from "@/components/footer"
 import Hero from "@/components/hero"
 
 const Landing = () => {
@@ -26,8 +28,9 @@ const Landing = () => {
         <EditedVideos />
         <EditedShorts />
         <Channels />
+        <Calendly />
       </section>
-      {/* Footer */}
+      <Footer />
     </Fragment>
   )
 }

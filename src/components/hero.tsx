@@ -1,9 +1,12 @@
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
+import { Particles } from "@/components/particles"
+
 const Hero = () => {
   return (
     <div className="pt-20">
+      <Particles className="absolute inset-0 -z-10" />
       <div className="px-8 text-center">
         <div className="mb-6" data-aos="fade-down">
           <div className="relative inline-flex before:absolute before:inset-0">
@@ -36,7 +39,7 @@ const Hero = () => {
 
         <div className="mx-auto flex max-w-xs flex-col items-center gap-4 sm:inline-flex sm:flex-row sm:justify-center">
           <Link
-            href="#calednly"
+            href="#calendly"
             className="group flex w-full items-center justify-center whitespace-nowrap rounded bg-gradient-to-r from-white/80 via-white to-white/80 px-5 py-1.5 font-medium text-zinc-900 transition duration-150 ease-in-out hover:bg-white"
             data-aos="fade-down"
             data-aos-delay="400"
