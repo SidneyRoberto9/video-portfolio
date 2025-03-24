@@ -1,10 +1,10 @@
 "use client"
 
-import YouTube from "react-youtube"
+import YouTube from 'react-youtube';
 
-import { Separator } from "@/components/ui/separator"
-import { videoOptions, videosIds } from "@/data/videos"
-import useWindowSize from "@/hooks/useWindowSize"
+import { Separator } from '@/components/ui/separator';
+import { videoOptions, videosIds } from '@/data/videos';
+import useWindowSize from '@/hooks/useWindowSize';
 
 const EditedVideos = () => {
   const { width, height } = useWindowSize()
@@ -18,7 +18,7 @@ const EditedVideos = () => {
   return (
     <div className="text-center">
       <h1 className="pb-4 text-5xl font-bold tracking-tight lg:text-6xl">
-        Videos I've Created
+        Videos I Liked
       </h1>
       <div className="flex items-center justify-center">
         <Separator className="mt-3 h-0.5 w-40 bg-slate-100/20" />
